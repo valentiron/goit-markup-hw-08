@@ -1,35 +1,82 @@
 .skills {
-  @include section (94px, 94px);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .skills__list {
-  // display: flex;
+  gap: var(--set-gap);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--set-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.skills__item {
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    --items: 2;
+
+    width: 354px;
+
+    flex-basis: calc(100% - var(--set-gap) * var(--items) - 1 / var(--items));
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .skills__icon-box {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // width: 270px;
-  // height: 120px;
-  // border-radius: 4px;
-  // background-color: var(--section-bg-color);
-  // margin-bottom: var(--set-gap);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--section-bg-color);
 
-.skills__item:not(:last-child) {
-  // margin-right: var(--set-gap);
+  margin-bottom: var(--set-gap);
+
+  max-width: 100%;
+  height: 120px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+  }
 }
 
 .skills__title {
-  // margin-bottom: 10px;
-    //  @include fonts (700, 14px, 1.14, 0.03em);
-  // text-transform: uppercase;
-  // color: var(--dark-txt-color);
+  margin-bottom: 10px;
+
+  @include fonts(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--dark-txt-color);
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .skills__text {
-    //  @include fonts (null, null, 1.14, 0.03em);
-
-  // color: var(--main-txt-color);
+  @include fonts(null, null, 1.14, 0.03em);
+  color: var(--main-txt-color);
 }

@@ -1,40 +1,40 @@
 .team {
-@include section (94px, 94px);
+  @include section(94px, 94px);
 
   background-color: var(--section-bg-color);
-  
+
   &__person-descript {
     padding-top: var(--set-gap);
     padding-bottom: var(--set-gap);
   }
-  
+
   &__person-name {
     font-weight: 500;
     color: var(--dark-txt-color);
     margin-bottom: 10px;
   }
-  
+
   &__person-position {
     color: var(--main-txt-color);
   }
-  
+
   &__links {
-      margin-top: 16px;
+    margin-top: 16px;
   }
 
   &__item {
-    flex-basis: calc((100% - var(--set-gap) * 4) / 4);
-  
+    --items: 4;
+    flex-basis: calc((100% - var(--set-gap) * var(--items) - 1) / var(--items));
+
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
-}
-
+  }
 }
 
 .person {
-     @include fonts (null, 16px, 1.19, 0.03em);
+  @include fonts(null, 16px, 1.19, 0.03em);
   text-align: center;
 }
