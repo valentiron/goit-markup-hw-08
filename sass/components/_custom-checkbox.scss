@@ -1,0 +1,21 @@
+.custom-checkbox {
+  margin-right: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+    border-radius: 2px;
+    color:var(--white-color);
+    outline: 2px solid var(--dark-txt-color);
+    outline-offset: -1px;
+      transition: background-color var(--animation), outline-color var(--animation);
+
+      &__icon {
+  fill:currentColor;
+  transition: fill var(--animation);
+}
+
+}
+
+
