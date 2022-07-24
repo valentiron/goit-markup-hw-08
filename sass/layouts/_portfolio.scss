@@ -1,3 +1,7 @@
+.portfolio {
+  @include section (94px, 94px);
+}
+
 .portfolio__btns {
   display: flex;
   justify-content: center;
@@ -39,17 +43,12 @@
 }
 
 .portfolio__project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+     @include fonts (700, 18px, 2, 0.06em);
   color: var(--dark-txt-color);
 }
 
 .portfolio__project-type {
   margin-top: 4px;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+     @include fonts (null, 16px, 1.88, 0.03em);
   color: var(--main-txt-color);
 }

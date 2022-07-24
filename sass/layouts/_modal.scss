@@ -20,8 +20,7 @@
 }
 
 .modal__title {
-  font-weight: 700;
-    font-size: 20px;
+     @include fonts (700, 20px, null, null);
     margin-bottom: 12px;
 }
 
@@ -44,10 +43,7 @@
 }
 
 .modal__register-label{
-  font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+     @include fonts (400, 12px, 1.17, 0.01em);
     color: var(--main-txt-color);
   margin-bottom: 4px;
 }
@@ -57,9 +53,7 @@
   height: 40px;
   background-color: transparent;
   padding-left: 42px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+     @include fonts (null, 14px, 1.14, 0.01em);
   color: var(--header-logo-color);
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -92,10 +86,7 @@
   resize: none;
 
   &::placeholder {
-  font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+       @include fonts (400, 14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -124,19 +115,13 @@ outline-color:var(--accent-color) ;
 }
 
 .modal__agree-text {
-  font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+     @include fonts (400, 14px, 1.71, 0.03em);
     color: var(--main-txt-color);
     user-select: none;
 }
 
 .modal__agree-link {
-  font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+     @include fonts (400, 14px, 1.71, 0.03em);
     text-decoration-line: underline; 
     color: #2196F3;
 }

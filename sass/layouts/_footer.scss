@@ -28,10 +28,7 @@
 
 .footer__link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts (400, 14px, 1.71, 0.03em);
 }
 
 .footer__place {
@@ -57,10 +54,7 @@
 
 .footer__appeal {
   display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+   @include fonts (700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
@@ -85,12 +79,10 @@
   padding-left: 16px;
   margin-right: 12px;
 
-  font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;   
+     @include fonts (400, 64px, 1.25, 0.03em); 
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
+
     color: rgba(255, 255, 255, 0.6);
 
     background-color: transparent;

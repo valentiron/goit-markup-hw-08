@@ -1,0 +1,12 @@
+@mixin section ($indent-t, $indent-b, $mar:0) {
+    padding-top: $indent-t;
+    padding-bottom: $indent-b;
+    margin: $mar;
+}
+
+@mixin fonts ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

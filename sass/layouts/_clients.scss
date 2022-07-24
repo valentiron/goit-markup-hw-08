@@ -1,3 +1,7 @@
+.clients {
+  @include section (94px, 94px);
+}
+
 .clients__list {
   display: flex;
   justify-content: center;

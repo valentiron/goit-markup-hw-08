@@ -15,6 +15,7 @@
   /* Others */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --set-gap: 30px;
+  --items:3;
 }
 
 .visually-hidden {
@@ -200,11 +201,25 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -241,8 +256,8 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -496,51 +511,16 @@ header {
   background-size: cover;
 }
 
-.skills__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.skills__icon-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--section-bg-color);
-  margin-bottom: var(--set-gap);
-}
-
-.skills__item:not(:last-child) {
-  margin-right: var(--set-gap);
-}
-
-.skills__title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--dark-txt-color);
-}
-
-.skills__text {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-txt-color);
+.skills {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0;
 }
 
 .work {
-  padding-top: 0;
+  padding-top: 94px;
+  padding-bottom: 0;
+  margin: 0;
 }
 .work__list {
   display: -webkit-box;
@@ -580,6 +560,9 @@ header {
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0;
   background-color: var(--section-bg-color);
 }
 .team__person-descript {
@@ -610,8 +593,14 @@ header {
 .person {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0;
 }
 
 .clients__list {
@@ -656,6 +645,12 @@ header {
 
 .clients__icon {
   fill: currentColor;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0;
 }
 
 .portfolio__btns {
@@ -784,7 +779,7 @@ header {
   display: block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
@@ -814,15 +809,15 @@ header {
   padding-left: 16px;
   margin-right: 12px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 64px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   outline: transparent;
