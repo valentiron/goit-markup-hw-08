@@ -1,18 +1,37 @@
 .clients {
-  @include section (94px, 94px);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__list {
   display: flex;
   justify-content: center;
+  gap: var(--set-gap);
 }
 
 .clients__item {
-  width: 170px;
+  --items: 2;
+  width: 210px;
   height: 92px;
+  flex-basis: calc(100% - var(--set-gap) * var(--items) - 1 / var(--items));
 
-  &:not(:last-child) {
-    margin-right: var(--set-gap);
+  @media screen and (min-width: 768px) {
+    --items: 3;
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

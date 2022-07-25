@@ -10,18 +10,30 @@ header {
 
 
 .header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width:768px) {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-right: 88px;
+  }
+
+    @media screen and (min-width:1200px) {
+  padding-top: 26px;
+  padding-bottom: 26px;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  }
 }
 
 .logo--header {
   color: var(--header-logo-color);
 }
 
+
 .nav {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .nav__item:not(:last-child) {
@@ -29,8 +41,12 @@ header {
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__link {
@@ -63,12 +79,15 @@ header {
   }
 }
 
-
 .header__contacts {
+    display: none;
+
+  @media screen and (min-width:768px) {
   display: flex;
   align-items: center;
   transition: color var(--animation);
   margin-left: auto;
+  }
 }
 
 .header__link {
