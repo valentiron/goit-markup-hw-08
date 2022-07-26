@@ -5,12 +5,44 @@
 }
 
 .footer__section {
+  position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+  }
+}
+
+.footer__appeal {
+  display: block;
+  @include fonts(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .footer__address {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -23,12 +55,12 @@
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__link {
   font-style: normal;
-  @include fonts (400, 14px, 1.71, 0.03em);
+  @include fonts(400, 14px, 1.71, 0.03em);
 }
 
 .footer__place {
@@ -49,58 +81,123 @@
 }
 
 .footer__social {
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    margin-left: 70px;
+  }
 }
 
-.footer__appeal {
-  display: block;
-   @include fonts (700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin-bottom: 20px;
+.footer-socials {
+  align-items: center;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 570px;
+    align-items: baseline;
+    margin-left: auto;
+  }
 }
 
 .footer__field {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: start;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 570px;
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 
 .footer__email {
-  position: relative;
   height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media screen and (min-width:1200px) {
+    max-width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer__input {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
   height: 100%;
-  width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
 
-     @include fonts (400, 64px, 1.25, 0.03em); 
-    display: flex;
-    align-items: center;
 
-    color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
 
-    background-color: transparent;
-    outline: transparent;
+  color: rgba(255, 255, 255, 0.6);
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
 
-      transition: border-color var(--animation);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-      &:focus {
-        border-color: var(--accent-color);
-      }
-      
-      &-icon {
-        fill:currentColor;
-      }
+  transition: border-color var(--animation);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+
+  .footer__input::placeholder {
+    @include fonts(400, 16px, 1.25, 0.03em);
+  }
 }
 
+.footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 29px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
+  &-text {
+    margin-right: 10px;
+  }
+}

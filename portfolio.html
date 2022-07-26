@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body>
+  <body data-body>
     <!-- Section Header -->
     <header class="header">
       <div class="container header__container">
@@ -35,12 +35,15 @@
           <a class="logo header__logo link" href="./index.html">
             Web<span class="logo--header">Studio</span>
           </a>
+
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link header__link link " href="./index.html">Студия</a>
+              <a class="nav__link header__link link nav__link--current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link header__link link nav__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link header__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link header__link link" href="">Контакты</a>
@@ -50,7 +53,10 @@
 
         <ul class="contacts header__contacts list">
           <li class="contacts__item">
-            <a class="contacts__link header__link contacts__link--header link" href="mailto:info@devstudio.com">
+            <a
+              class="contacts__link header__link contacts__link--header link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts__link-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -58,7 +64,10 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link header__link contacts__link--header link" href="tel:+380961111111">
+            <a
+              class="contacts__link header__link contacts__link--header link"
+              href="tel:+380961111111"
+            >
               <svg class="contacts__link-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -66,6 +75,13 @@
             </a>
           </li>
         </ul>
+
+        <button class="header__menu-button" type="button" data-menu-button>
+          <svg class="header__menu-icon" width="24" height="16">
+            <use class="header__menu-open" href="./images/icons.svg#icon-menu-open"></use>
+            <use class="header__menu-close" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -366,5 +382,46 @@
         </div>
       </div>
     </footer>
+
+     <!-- Mobile menu section -->
+    <div class="mobile-menu" data-menu>
+      <ul class="list mobile-menu__nav">
+        <li class="mobile-menu__nav-item">
+          <a class="link mobile-menu__nav-link " href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="link mobile-menu__nav-link mobile-menu__nav-link--current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="link mobile-menu__nav-link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="list mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+          <a class="link mobile-menu__contacts-link mobile-menu__contacts-link--current" href="">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="link mobile-menu__contacts-link" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="list mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a class="link mobile-menu__socials-link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="link mobile-menu__socials-link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="link mobile-menu__socials-link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="link mobile-menu__socials-link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+      <script src="./js/menu.js"></script>
   </body>
 </html>

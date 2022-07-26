@@ -48,6 +48,15 @@
   }
 }
 
+.team__person-img {
+  max-height: 460px;
+
+  @media screen and (min-width:768px) {
+    max-height: 374px;
+    
+  }
+}
+
 .team__person-name {
   font-weight: 500;
   color: var(--dark-txt-color);
