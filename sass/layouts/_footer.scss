@@ -131,7 +131,7 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 570px;
-    align-items: baseline;
+    align-items: start;
     flex-direction: row;
   }
 }
@@ -141,7 +141,7 @@
   margin-bottom: 20px;
   width: 100%;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 358px;
     margin-right: 12px;
   }
@@ -156,7 +156,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-
 
   display: flex;
   align-items: center;
