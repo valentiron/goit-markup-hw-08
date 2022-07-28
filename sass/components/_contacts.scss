@@ -1,6 +1,10 @@
 .contacts {
   &__item:not(:last-child) {
     margin-right: 50px;
+
+      @media screen and (min-width:768px) and (max-width:1199px) {
+    margin-right: 0; 
+  }
   }
 }
 
@@ -16,4 +20,10 @@
     margin-right: 10px;
     fill: currentColor;
   }
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
