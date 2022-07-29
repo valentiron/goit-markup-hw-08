@@ -17,6 +17,10 @@
   display: flex;
   justify-content: center;
   gap: var(--set-gap);
+
+    @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;   
+  }
 }
 
 .clients__item {
