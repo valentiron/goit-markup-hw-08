@@ -38,12 +38,12 @@
 
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link header__link link " href="./index.html"
-                >Студия</a
-              >
+              <a class="nav__link header__link link" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link header__link link nav__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link header__link link nav__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link header__link link" href="">Контакты</a>
@@ -91,7 +91,9 @@
           <h1 class="portfolio__title visually-hidden">Наше портфолио</h1>
           <ul class="portfolio__btns list">
             <li class="portfolio__btn">
-              <button class="btn btn--works-type btn--works-type--current" type="button">Все</button>
+              <button class="btn btn--works-type btn--works-type--current" type="button">
+                Все
+              </button>
             </li>
             <li class="portfolio__btn">
               <button class="btn btn--works-type" type="button">Веб- сайты</button>
@@ -109,47 +111,48 @@
 
           <ul class="list portfolio__list card-set">
             <li class="portfolio__item card-item">
-              <a class="portfolio__link link" href="">
+              <a class="portfolio__link portfolio__link--grow link" href="">
                 <div class="img-overlay">
-
                   <picture>
-                <source
-                  media="(min-width:1200px )"
-                  srcset="./images/team/man-4_lg.jpg 1x, /images/team/man-4_lg@2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <source
-                  media="(min-width:768px )"
-                  srcset="/images/team/man-4_md.jpg 1x, /images/team/man-4_md@2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <source
-                  media="(max-width:767px )"
-                  srcset="/images/team/man-4_sm.jpg 1x, /images/team/man-4_sm@2x.jpg 2x"
-                  type="image/jpg"
-                />
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-1.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  width="450"
-                  height="460"
-                />
-              </picture>
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-1.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-1_lg.jpg   1x,
+                        /images/portfolio/portfolio-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        /images/portfolio/portfolio-1_md.jpg    1x,
+                        /images/portfolio/portfolio-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        /images/portfolio/portfolio-1_sm.jpg    1x,
+                        /images/portfolio/portfolio-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-1_sm.jpg"
+                      alt="work-example-1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="portfolio__project-description portfolio__project-description--first">
+                <div class="portfolio__project-description portfolio__project-description--grow">
                   <h2 class="portfolio__project-name">Технокряк</h2>
                   <p class="portfolio__project-type">Веб-сайт</p>
                 </div>
@@ -158,12 +161,40 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-2.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-2_lg.jpg    1x,
+                        ./images/portfolio/portfolio-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-2_md.jpg    1x,
+                        ./images/portfolio/portfolio-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-2_sm.jpg    1x,
+                        ./images/portfolio/portfolio-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-2_sm.jpg"
+                      alt="work-example-2"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -179,12 +210,39 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-3.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-3_lg.jpg    1x,
+                        ./images/portfolio/portfolio-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-3_md.jpg    1x,
+                        ./images/portfolio/portfolio-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-3_sm.jpg    1x,
+                        ./images/portfolio/portfolio-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-3_sm.jpg"
+                      alt="work-example-3"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -200,12 +258,39 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-4.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-4_lg.jpg    1x,
+                        ./images/portfolio/portfolio-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-4_md.jpg    1x,
+                        ./images/portfolio/portfolio-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-4_sm.jpg    1x,
+                        ./images/portfolio/portfolio-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-4_sm.jpg"
+                      alt="work-example-4"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -221,12 +306,39 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-5.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-5_lg.jpg    1x,
+                        ./images/portfolio/portfolio-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-5_md.jpg    1x,
+                        ./images/portfolio/portfolio-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-5_sm.jpg    1x,
+                        ./images/portfolio/portfolio-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-5_sm.jpg"
+                      alt="work-example-5"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -242,12 +354,39 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-6.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-6_lg.jpg    1x,
+                        ./images/portfolio/portfolio-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-6_md.jpg    1x,
+                        ./images/portfolio/portfolio-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-6_sm.jpg    1x,
+                        ./images/portfolio/portfolio-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-6_sm.jpg"
+                      alt="work-example-6"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -263,12 +402,40 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-7.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-7_lg.jpg    1x,
+                        ./images/portfolio/portfolio-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-7_md.jpg    1x,
+                        ./images/portfolio/portfolio-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-7_sm.jpg    1x,
+                        ./images/portfolio/portfolio-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-7_sm.jpg"
+                      alt="work-example-7"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -284,12 +451,40 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-8.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-8_lg.jpg    1x,
+                        ./images/portfolio/portfolio-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-8_md.jpg    1x,
+                        ./images/portfolio/portfolio-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-8_sm.jpg    1x,
+                        ./images/portfolio/portfolio-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-8_sm.jpg"
+                      alt="work-example-8"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -305,12 +500,39 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link link" href="">
                 <div class="img-overlay">
-                  <img
-                    class="portfolio__img"
-                    src="./images/work-example-9.jpg"
-                    alt="work-example-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/portfolio-9_lg.jpg    1x,
+                        ./images/portfolio/portfolio-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/portfolio-9_md.jpg    1x,
+                        ./images/portfolio/portfolio-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/portfolio-9_sm.jpg    1x,
+                        ./images/portfolio/portfolio-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/portfolio-9_sm.jpg"
+                      alt="work-example-9"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -338,11 +560,13 @@
           <address>
             <ul class="list footer__list">
               <li class="footer__item">
-                <a class="footer__link link footer__place" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                <a class="footer__link link footer__place" href=""
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="footer__item">
                 <a class="footer__link link footer__contact" href="mailto:info@devstudio.com">
-                  info@devstudio.com 
+                  info@devstudio.com
                 </a>
               </li>
               <li class="footer-item">
@@ -409,14 +633,18 @@
       </div>
     </footer>
 
-     <!-- Mobile menu section -->
+    <!-- Mobile menu section -->
     <div class="mobile-menu" data-menu>
       <ul class="list mobile-menu__nav">
         <li class="mobile-menu__nav-item">
-          <a class="link mobile-menu__nav-link " href="./index.html">Студія</a>
+          <a class="link mobile-menu__nav-link" href="./index.html">Студія</a>
         </li>
         <li class="mobile-menu__nav-item">
-          <a class="link mobile-menu__nav-link mobile-menu__nav-link--current" href="./portfolio.html">Портфоліо</a>
+          <a
+            class="link mobile-menu__nav-link mobile-menu__nav-link--current"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
         </li>
         <li class="mobile-menu__nav-item">
           <a class="link mobile-menu__nav-link" href="">Контакти</a>
@@ -425,7 +653,9 @@
 
       <ul class="list mobile-menu__contacts">
         <li class="mobile-menu__contacts-item">
-          <a class="link mobile-menu__contacts-link mobile-menu__contacts-link--current" href="">+38 096 111 11 11</a>
+          <a class="link mobile-menu__contacts-link mobile-menu__contacts-link--current" href=""
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-menu__contacts-item">
           <a class="link mobile-menu__contacts-link" href="">info@devstudio.com</a>
@@ -448,6 +678,6 @@
       </ul>
     </div>
 
-      <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
