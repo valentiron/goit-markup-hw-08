@@ -1,5 +1,3 @@
-
-
 .modal {
   position: absolute;
   display: flex;
@@ -8,20 +6,32 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   padding: 40px;
+
+  @media screen and (max-width: 1199px) {
+    max-height: 609px;
+    max-width: 450px;
+  }
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
-     @include fonts (700, 20px, null, null);
-    margin-bottom: 12px;
+  @include fonts(700, 20px, 1.5, 00.03em);
+  margin-bottom: 12px;
 }
 
 .modal__register-form {
@@ -33,18 +43,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 448px;  
   margin-bottom: 10px;
-}
 
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+}
 
 .modal__last-field {
   margin-bottom: 20px;
 }
 
-.modal__register-label{
-     @include fonts (400, 12px, 1.17, 0.01em);
-    color: var(--main-txt-color);
+.modal__register-label {
+  @include fonts(400, 12px, 1.17, 0.01em);
+  color: var(--main-txt-color);
   margin-bottom: 4px;
 }
 
@@ -53,22 +69,22 @@
   height: 40px;
   background-color: transparent;
   padding-left: 42px;
-     @include fonts (null, 14px, 1.14, 0.01em);
+  @include fonts(null, 14px, 1.14, 0.01em);
   color: var(--header-logo-color);
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
 
-      transition: border-color var(--animation);
+  transition: border-color var(--animation);
 
-      &:focus {
-      border-color:var(--accent-color);
-      }
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-      &:focus + .modal__register-icon {
-        fill: var(--accent-color);
-      }
+  &:focus + .modal__register-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__register-icon {
@@ -86,13 +102,14 @@
   resize: none;
 
   &::placeholder {
-       @include fonts (400, 14px, 1.14, 0.01em);
+    @include fonts(400, 14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }
 
 .modal__btn--send {
   padding: 10px 56px;
+  width: 200px;
   border: none;
   margin: 0 auto;
   background-color: var(--accent-color);
@@ -108,20 +125,27 @@
   margin-bottom: 30px;
 }
 
-
-.modal__checkbox-input:checked  + .custom-checkbox {
-background-color: var(--accent-color);
-outline-color:var(--accent-color) ;
+.modal__checkbox-input:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  outline-color: var(--accent-color);
 }
 
 .modal__agree-text {
-     @include fonts (400, 14px, 1.71, 0.03em);
-    color: var(--main-txt-color);
-    user-select: none;
+  @include fonts(400, 12px, 1.17, 0.03em);
+
+  color: var(--main-txt-color);
+  user-select: none;
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 1.71, 0.03em);
+  }
 }
 
 .modal__agree-link {
-     @include fonts (400, 14px, 1.71, 0.03em);
-    text-decoration-line: underline; 
-    color: #2196F3;
+  @include fonts(400, 12px, 1.17, 0.03em);
+  text-decoration-line: underline;
+  color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 1.71, 0.03em);
+  }
 }
