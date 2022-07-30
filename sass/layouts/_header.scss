@@ -3,6 +3,10 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.header--index {
+  border: none;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -19,8 +23,8 @@ header {
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
   }
 }

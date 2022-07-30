@@ -5,10 +5,16 @@
   height: 40px;
   margin-left: auto;
   z-index: 10;
+  
+  transition: fill var(--animation);
+   &:hover {
+      fill:var(--accent-color);
+    }
 
   display: flex;
   align-items: center;
   justify-content: center;
+
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -26,6 +32,7 @@
   transition: opacity var(--animation);
   opacity: 0;
   .header__menu-button.is-open & {
+
     opacity: 1;
   }
 }

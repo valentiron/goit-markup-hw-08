@@ -18,8 +18,8 @@
   align-items: baseline;
   justify-content: center;
 
-  @media screen and (min-width:1200px) {
-    flex-wrap: nowrap;   
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -74,4 +74,8 @@
 .skills__text {
   @include fonts(null, null, 1.14, 0.03em);
   color: var(--main-txt-color);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 1.71, 0.03em);
+  }
 }
