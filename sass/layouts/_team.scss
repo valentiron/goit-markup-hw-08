@@ -12,31 +12,20 @@
 }
 
 .team__list {
-  gap:var(--set-gap);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (min-width:1200px) {
-    flex-wrap: nowrap;   
-  }
 }
 
 .team__item {
   --items: 1;
-  max-width: 450px;
-  max-height: 622px;
 
   @media screen and (min-width: 768px) {
     --items: 2;
-    max-width: 354px;
-    max-height: 536px;
   }
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     --items: 4;
-    max-width: 270px;
-    max-height: 428px ;
   }
 
   background: #ffffff;
@@ -49,8 +38,8 @@
 .team__person-descript {
   padding-top: var(--set-gap);
   padding-bottom: 24px;
-  
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     padding-bottom: var(--set-gap);
   }
 }
@@ -58,10 +47,9 @@
 .team__person-img {
   max-height: 460px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-height: 374px;
   }
-  
 }
 
 .team__person-name {

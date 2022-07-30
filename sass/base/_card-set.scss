@@ -5,7 +5,5 @@
 }
 
 .card__item {
-  align-items: center;
-  justify-content: center;
-  flex-basis: calc(100% - var(--set-gap) * var(--items) - 1 / var(--items));
+  flex-basis: calc((100% - var(--set-gap) * (var(--items) - 1)) / var(--items));
 }

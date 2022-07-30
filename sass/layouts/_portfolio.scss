@@ -1,7 +1,7 @@
 .portfolio {
   @include section(60px, 60px, null);
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     @include section(94px, 94px, null);
   }
 }
@@ -25,45 +25,22 @@
   }
 }
 
-.portfolio__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--set-gap);
-  width: 100%;
-
-  @media screen and (max-width: 767px) {
-    justify-content: center;
-  }
-}
-
 .portfolio__item {
   --items: 1;
-  align-items: center;
-  justify-content: center;
 
-  flex-basis: calc(100% - var(--set-gap) * var(--items) - 1 / var(--items));
-  max-height: 404px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     --items: 2;
-    max-width: 354px;
-    max-height: 440px;
   }
 
   @media screen and (min-width: 1200px) {
     --items: 3;
-    max-width: 370px;
   }
-
   background: var(--white-color);
-  width: 100%;
 }
 
 .portfolio__link {
   display: block;
   transition: box-shadow var(--animation);
-
-  max-height: 100%;
 
   &:hover,
   &:focus {
